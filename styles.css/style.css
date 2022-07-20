@@ -1,0 +1,516 @@
+/* Fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*-----------------------
+ Base style or Utilities
+ ------------------------  */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 140px;
+}
+
+/*-----------------------
+ Banner style
+ ------------------------  */
+
+.banner{
+    width: 1321px;
+    height: 646px;
+    background: #161616;
+    border-radius: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bannertext{
+    color: #FFFFFF;
+    margin-left: 106px;
+}
+.bannertext h1{
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+}
+.bannertext h1:hover{
+    transform: scale(1.2);
+}
+.bannerimage{
+    margin-top: 33px;
+    margin-left: 12px;
+    margin-right: 79px;
+    margin-bottom: 0px;
+
+}
+.bannerimage img{
+    width: 581px;
+    height: 613px;
+    margin-bottom: 0px;
+    transition: transform .5s ease;
+}
+.bannerimage:hover{
+    transform: scale(1.2);
+}
+.button{
+    padding: 16px 25px;
+    gap: 10px;
+    width: 187px;
+    height: 56px;
+    color: #FFFFFF;
+    background: #DD0000;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    border: none;
+
+}
+.button i{
+    width: 24px;
+    height: 24px;
+}
+.button:hover{
+    background:#87CEEB;
+}
+
+
+/*----------------------------
+ Blog Style
+ -----------------------------  */
+ .articles{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 130px;
+    margin-left: 140px;
+    margin-right: 140px;
+ }
+
+ /*---------------------------
+  Navigation bar
+  ----------------------------  */
+/* .blog{
+    display: flex;
+} */
+.navbox{
+    width: 312px;
+    height: 312px;
+    background: #161616;
+    border-radius: 10px;
+    /* position: absolute; */
+    margin-right: 24px;
+}
+.navbuttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.navbutton{
+    width: 252px;
+    height: 64px;
+    border: none;
+    background: #FFFFFF;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    margin:15px 0;
+}
+.selected{
+    background: #DD0000;
+    color: #FFFFFF;
+}
+.navbutton:hover{
+    background: #87CEEB;
+    color: #FFFFFF;
+}
+
+/*-------------------------
+ Blogs Style
+ --------------------------  */
+ .blogs{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 24px;
+    grid-column-gap: 24px;
+ }
+.blog{
+    width: 312px;
+    height: 362px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+}
+.blog-info{
+    margin-left: 20px;
+}
+.blog-info button{
+    margin-top: 20px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
+    background: #FFFFFF;
+    font-weight: 600;
+    font-size: 16px;
+    color: #161616;
+    line-height: 24px;
+}
+.blog-info button:hover{
+    background: #87CEEB;
+    color: #FFFFFF;
+    border: none;
+}
+.blog-info h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.time-chat{
+    color: rgba(22, 22, 22, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    margin-top: 20px;
+}
+.spacer{
+    margin-right: 30px;
+}
+.time-chat span{
+    margin-left: 10px;
+}
+/*-----------------------
+ Tablet exclusive button
+ ------------------------  */
+.viewall{
+    display: none;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
+
+/*----------------------
+ Footer Box
+ -----------------------  */
+ footer{
+    width: 100%;
+    height: 660px;
+    background: #161616;
+    color: white;
+    margin: none;
+ }
+ .footercontent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+ }
+ .footercontent h3{
+    margin-top: 130px;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+ }
+ hr{
+    width: 1320px;
+    height: 0px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 50px;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-column-gap: 25px;
+    list-style: none;
+    text-align: center;
+}
+.links a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.socials{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.socials i{
+    color: #FFFFFF;
+}
+
+/* ##########################
+ Css for Umcoming matches 
+ ############################ */
+.teams{
+    text-align: center;
+    width: 312px;
+    height: 242px;
+    border: 1px solid rgba(0, 0, 0, 0.151);
+    border-radius: 10px;
+}
+.vslist{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+    grid-column-gap:22px;
+}
+.vslist span{
+    margin-top: 23px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.teamname h3{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+    color: #161616;
+}
+.teamname p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #4D4D4D;
+}
+
+/*--------------------------
+ Media Queries
+ --------------------------- */
+
+ /* Moblie Devices */
+
+ @media only screen and (max-width:688px){
+    main{
+        margin: 0px 0px;
+    }
+
+    /* Banner fix  */
+    .banner{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        align-items: center;
+    }
+    .bannertext h1{
+        font-size: 30px;
+        line-height: 32px;
+    }
+    .bannertext p{
+        font-size: 12px;
+        line-height: 25px;
+    }
+    .bannerimage img{
+        width: 100%;
+        height: 100%;
+    }
+    .bannertext{
+        width: 50%;
+    }
+
+    /* nav Bar fix  */
+    .articles{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .navbox{
+        background: #FFFFFF;
+    }
+    .navbutton{
+        border: 1px solid rgba(0, 0, 0, 0.151);
+    }
+    .blogs{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-row-gap: 24px;
+        grid-column-gap: 24px;
+        margin-bottom: 10px;
+     }
+
+    /* Footer fix  */
+    hr{
+        width: 100%;
+        height: 0px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin-bottom: 50px;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 25px;
+        list-style: none;
+        text-align: center;
+    }
+    .socials{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        list-style: none;
+        justify-content: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+ }
+
+
+ /* Screen fix for tablet */
+
+ @media only screen and (min-width:689px) and (max-width:992px){
+    main{
+        margin: 20px 5px;
+    }
+    /* Banner Fix  */
+    .banner{
+        width: 85%;
+        height: 85%;
+    }
+    .bannertext{
+        margin-bottom: 60px;
+    }
+    .bannertext h1{
+        font-size: 45px;
+        line-height: 32px;
+    }
+    .bannertext p{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .bannerimage img{
+        width: 100%;
+        height: 100%;
+    }
+    .bannertext{
+        width: 50%;
+    }
+        /* nav Bar fix  */
+        .articles{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .navbox{
+            background: #FFFFFF;
+            width: 100%;
+        }
+        .navbuttons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 15px;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .navbutton{
+            border: 1px solid rgba(0, 0, 0, 0.151);
+            margin-left: 11px;
+            margin-right: 11px;
+            width: 230px;
+            height: 64px;
+        }
+        .blogs{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 24px;
+            grid-column-gap: 24px;
+            margin-bottom: 10px;
+         }
+
+         /* Adding back view button  */
+         .viewall{
+            display: block;
+         }
+          /* Footer fix  */
+          .links{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 25px;
+            list-style: none;
+            text-align: center;
+        } 
+ }
+
+/* Fix for device small screen computer  */
+ @media only screen and (min-width:993px) and (max-width:1312px){
+    main{
+        margin: 20px 5px;
+    }
+    /* Banner Fix  */
+    .banner{
+        width: 85%;
+        height: 85%;
+    }
+    .bannertext{
+        margin-bottom: 60px;
+    }
+    .bannertext h1{
+        font-size: 45px;
+        line-height: 32px;
+    }
+    .bannertext p{
+        font-size: 12px;
+        line-height: 24px;
+    }
+    .bannerimage img{
+        width: 100%;
+        height: 100%;
+    }
+    .bannertext{
+        width: 50%;
+    }
+        /* nav Bar fix  */
+        .articles{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .navbox{
+            background: #FFFFFF;
+            width: 100%;
+        }
+        .navbuttons{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-top: 15px;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .navbutton{
+            border: 1px solid rgba(0, 0, 0, 0.151);
+            margin-left: 11px;
+            margin-right: 11px;
+            width: 230px;
+            height: 64px;
+        }
+        .blogs{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 24px;
+            grid-column-gap: 24px;
+            margin-bottom: 10px;
+         }
+
+         /* Adding back view button  */
+         .viewall{
+            display: block;
+         }
+          /* Footer fix  */
+          .links{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 25px;
+            list-style: none;
+            text-align: center;
+        } 
+ }
